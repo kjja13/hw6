@@ -746,6 +746,7 @@ button {
 /* =============================================
    FOOTER
    ============================================= */
+
 .footer {
   background-color: var(--color-navy-blue);
   padding: 96px 0;
@@ -757,6 +758,7 @@ button {
   }
 }
 
+/* Контейнер — БЕЗ додаткових padding */
 .footer__container {
   display: flex;
   flex-direction: column;
@@ -764,7 +766,8 @@ button {
   gap: 72px;
 }
 
-/* Tablet */
+/* ================= TABLET ================= */
+
 @media (min-width: 768px) {
   .footer__container {
     flex-direction: row;
@@ -773,9 +776,21 @@ button {
     gap: 72px 24px;
     max-width: 584px;
   }
+
+  /* повертаємо вирівнювання вліво */
+  .footer__brand,
+  .footer__text,
+  .footer__social-title {
+    text-align: left;
+  }
+
+  .footer__social-list {
+    justify-content: flex-start;
+  }
 }
 
-/* Desktop — FIX: no extra padding here */
+/* ================= DESKTOP ================= */
+
 @media (min-width: 1158px) {
   .footer__container {
     flex-wrap: nowrap;
@@ -792,54 +807,43 @@ button {
     margin-right: 80px;
   }
 }
-
 /* FIX: center logo + text on mobile */
-.footer__brand {
-  text-align: center;
-}
-
 .footer__brand .logo {
   display: inline-block;
   margin-bottom: 16px;
 }
 
-/* FIX: mobile centering issue */
-.footer__social-title {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: var(--font-weight-medium);
-  letter-spacing: 0.02em;
-  color: var(--color-white);
-  margin-bottom: 16px;
+/* MOBILE */
+.footer__brand {
   text-align: center;
 }
 
 .footer__text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--color-cloud);
-  max-width: 264px;
   text-align: center;
 }
 
-/* Tablet/desktop override back to left alignment */
-@media (min-width: 768px) {
-  .footer__brand,
-  .footer__text {
-    text-align: left;
-  }
-
-  .footer__social-title {
-    text-align: left;
-  }
+.footer__social-title {
+  text-align: center;
 }
 
 .footer__social-list {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 
+/* TABLET+ */
+@media (min-width: 768px) {
+  .footer__brand,
+  .footer__text,
+  .footer__social-title {
+    text-align: left;
+  }
+
+  .footer__social-list {
+    justify-content: flex-start;
+  }
+}
 /* =============================================
    MODAL
    ============================================= */
@@ -882,15 +886,6 @@ button {
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform var(--transition);
-}
-
-@media (min-width: 1158px) {
-  .footer__container {
-    flex-wrap: nowrap;
-    gap: 0;
-    max-width: 1158px;
-    align-items: baseline;
-  }
 }
 
 .modal__close {

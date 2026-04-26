@@ -1,5 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
 
+  <!-- BURGER -->
+  <symbol id="icon-burger" viewBox="0 0 24 24">
+    <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- STRATEGY (checkmark in circle) -->
+  <symbol id="icon-strategy" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M22 32l6 6 14-14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </symbol>
+
+  <!-- PUNCTUALITY (plus in square) -->
+  <symbol id="icon-punctuality" viewBox="0 0 64 64">
+    <rect x="14" y="14" width="36" height="36" rx="4" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M22 32h20M32 22v20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- DILIGENCE (A-shape) -->
+  <symbol id="icon-diligence" viewBox="0 0 64 64">
+    <path d="M16 48L32 16L48 48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M22 36h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- TECHNOLOGIES (globe/ellipse) -->
+  <symbol id="icon-technologies" viewBox="0 0 64 64">
+    <ellipse cx="32" cy="32" rx="20" ry="12" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M12 32c0 6.627 8.954 12 20 12s20-5.373 20-12" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M32 20v24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+
   <!-- CLOSE -->
   <symbol id="close" viewBox="0 0 8 8">
     <path d="M1 1l6 6M7 1L1 7" stroke="currentColor" stroke-width="1.5"/>
