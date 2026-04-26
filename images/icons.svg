@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+  <!-- CLOSE -->
+  <symbol id="close" viewBox="0 0 8 8">
+    <path d="M1 1l6 6M7 1L1 7" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <!-- CHECK -->
+  <symbol id="check" viewBox="0 0 10 8">
+    <path d="M1 4l3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <!-- PERSON -->
+  <symbol id="person" viewBox="0 0 18 24">
+    <path d="M9 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4 0-7 2-7 5v3h14v-3c0-3-3-5-7-5z"/>
+  </symbol>
+
+  <!-- PHONE -->
+  <symbol id="phone" viewBox="0 0 18 24">
+    <path d="M6 2h6v20H6z"/>
+  </symbol>
+
+  <!-- EMAIL -->
+  <symbol id="icon-email" viewBox="0 0 18 24">
+    <path d="M2 6h14v12H2z"/>
+    <path d="M2 6l7 6 7-6"/>
+  </symbol>
+
+  <!-- SEND -->
+  <symbol id="icon-send" viewBox="0 0 24 24">
+    <path d="M2 21l20-9L2 3v7l15 2-15 2z"/>
+  </symbol>
+
+  <!-- SOCIAL -->
+  <symbol id="icon-instagram" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="5"/>
+  </symbol>
+
+  <symbol id="icon-twitter" viewBox="0 0 24 24">
+    <path d="M4 4l16 16"/>
+  </symbol>
+
+  <symbol id="icon-facebook" viewBox="0 0 24 24">
+    <path d="M10 2h4v20h-4z"/>
+  </symbol>
+
+  <symbol id="icon-linkedin" viewBox="0 0 24 24">
+    <path d="M4 4h4v16H4zM10 10h4v10h-4z"/>
+  </symbol>
+
+</svg>
