@@ -487,6 +487,7 @@ button {
     border-radius: 4px;
     height: 112px;
     margin-bottom: 8px;
+    color: var(--color-iris);
   }
 }
 
