@@ -355,7 +355,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 320px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
   padding: 72px 0;
@@ -365,7 +365,7 @@ button {
   .hero {
     background-image:
       linear-gradient(var(--color-grey), var(--color-grey)),
-      url("../images/hero-bg.jpg");
+      url("../images/hero-bg@2x.jpg");
   }
 }
 
@@ -383,7 +383,7 @@ button {
   .hero {
     background-image:
       linear-gradient(var(--color-grey), var(--color-grey)),
-      url("../images/hero-bg.jpg");
+      url("../images/hero-bg@2x.jpg");
   }
 }
 
@@ -401,7 +401,7 @@ button {
   .hero {
     background-image:
       linear-gradient(var(--color-grey), var(--color-grey)),
-      url("../images/hero-bg.jpg");
+      url("../images/hero-bg@2x.jpg");
   }
 }
 
@@ -933,17 +933,24 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  max-width: calc(100% - 32px);
+  width: calc(100% - 32px);
+  max-width: 408px;
   min-height: 584px;
   background-color: var(--color-dairy);
   border-radius: 4px;
-  padding: 72px 24px 24px;
+  padding: 48px 16px 16px;
   box-shadow:
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform var(--transition);
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px;
+  }
 }
 
 .modal__close {
