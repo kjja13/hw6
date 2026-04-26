@@ -53,16 +53,8 @@
 
         <!-- Burger button (mobile only) -->
         <button class="burger-btn" type="button" aria-label="Open menu">
-          <svg
-            class="burger-btn__icon"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <rect y="4" width="24" height="2" fill="currentColor" />
-            <rect y="11" width="24" height="2" fill="currentColor" />
-            <rect y="18" width="24" height="2" fill="currentColor" />
+          <svg class="burger-btn__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
@@ -85,20 +77,8 @@
           <ul class="features__list">
             <li class="features__item">
               <div class="features__icon-box">
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                  <circle
-                    cx="32"
-                    cy="32"
-                    r="20"
-                    stroke="#4D5AE5"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M22 32l6 6 14-14"
-                    stroke="#4D5AE5"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-strategy"></use>
                 </svg>
               </div>
               <h3 class="features__title">Strategy</h3>
@@ -109,22 +89,8 @@
             </li>
             <li class="features__item">
               <div class="features__icon-box">
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                  <rect
-                    x="14"
-                    y="14"
-                    width="36"
-                    height="36"
-                    rx="4"
-                    stroke="#4D5AE5"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M22 32h20M32 22v20"
-                    stroke="#4D5AE5"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-punctuality"></use>
                 </svg>
               </div>
               <h3 class="features__title">Punctuality</h3>
@@ -135,20 +101,8 @@
             </li>
             <li class="features__item">
               <div class="features__icon-box">
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                  <path
-                    d="M16 48 L32 16 L48 48"
-                    stroke="#4D5AE5"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M22 36h20"
-                    stroke="#4D5AE5"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-diligence"></use>
                 </svg>
               </div>
               <h3 class="features__title">Diligence</h3>
@@ -160,26 +114,8 @@
             </li>
             <li class="features__item">
               <div class="features__icon-box">
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                  <ellipse
-                    cx="32"
-                    cy="32"
-                    rx="20"
-                    ry="12"
-                    stroke="#4D5AE5"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M12 32c0 6.627 8.954 12 20 12s20-5.373 20-12"
-                    stroke="#4D5AE5"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M32 20v24"
-                    stroke="#4D5AE5"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-technologies"></use>
                 </svg>
               </div>
               <h3 class="features__title">Technologies</h3>
@@ -745,7 +681,7 @@
         <p class="modal__title">
           Leave your contacts and we will call you back
         </p>
-        <div class="modal__form">
+        <form class="modal__form">
           <div class="modal__field">
             <label class="modal__label" for="modalName">Name</label>
             <div class="modal__input-wrap">
@@ -857,10 +793,10 @@
               <a href="#" class="modal__policy-link">Privacy Policy</a>
             </label>
           </div>
-          <button class="btn btn--primary modal__submit" type="button">
+          <button class="btn btn--primary modal__submit" type="submit">
             Send
           </button>
-        </div>
+        </form>
       </div>
     </div>
 
