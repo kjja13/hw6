@@ -289,7 +289,6 @@ button {
     gap: 12px;
   }
 
-  /* D5: tablet contacts typography */
   .contacts__link {
     font-size: 12px;
     line-height: 1.17;
@@ -314,7 +313,6 @@ button {
     gap: 40px;
   }
 
-  /* D5: desktop contacts typography */
   .contacts__link {
     font-size: 16px;
     line-height: 1.5;
@@ -347,7 +345,7 @@ button {
 }
 
 /* =============================================
-   HERO  (D3: separate bg image per breakpoint)
+   HERO
    ============================================= */
 .hero {
   background-color: var(--color-navy-blue);
@@ -363,7 +361,6 @@ button {
   padding: 72px 0;
 }
 
-/* Mobile @2x */
 @media (min-resolution: 192dpi) {
   .hero {
     background-image:
@@ -382,7 +379,6 @@ button {
   }
 }
 
-/* Tablet @2x */
 @media (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
     background-image:
@@ -401,7 +397,6 @@ button {
   }
 }
 
-/* Desktop @2x */
 @media (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero {
     background-image:
@@ -416,7 +411,9 @@ button {
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.02em;
   color: var(--color-white);
-  max-width: 320px;
+  /* Fixed: constrain width on mobile so text wraps properly */
+  width: 100%;
+  max-width: 216px;
   margin: 0 auto 72px;
 }
 
@@ -436,7 +433,7 @@ button {
 }
 
 /* =============================================
-   FEATURES  (D6: typography changes by breakpoint)
+   FEATURES
    ============================================= */
 .features__list {
   display: flex;
@@ -492,7 +489,6 @@ button {
   }
 }
 
-/* D6: title typography — mobile bold h3 → desktop regular h3 */
 .features__title {
   font-size: 36px;
   line-height: 1.11;
@@ -531,13 +527,12 @@ button {
 }
 
 /* =============================================
-   OUR TEAM   (D4: custom container width)
+   OUR TEAM
    ============================================= */
 .team {
   background-color: var(--color-cloud);
 }
 
-/* D4: custom container for team */
 .team__container {
   max-width: 584px;
   padding: 0 16px;
@@ -638,7 +633,7 @@ button {
 }
 
 /* =============================================
-   PORTFOLIO   (D1: overlay on ALL widths)
+   PORTFOLIO
    ============================================= */
 .portfolio__list {
   display: flex;
@@ -660,10 +655,19 @@ button {
   }
 }
 
+/* Fixed: no shadow in normal state on desktop — only on hover */
 .portfolio__item {
   width: 100%;
+  /* Mobile & tablet: always show subtle shadow */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   transition: box-shadow var(--transition);
+}
+
+@media (min-width: 1158px) {
+  /* Desktop: remove default shadow, show only on hover */
+  .portfolio__item {
+    box-shadow: none;
+  }
 }
 
 .portfolio__item:hover,
@@ -686,7 +690,6 @@ button {
   }
 }
 
-/* D1: overlay on ALL widths */
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
@@ -746,14 +749,13 @@ button {
 }
 
 /* =============================================
-   FOOTER  (D4: custom container)
+   FOOTER
    ============================================= */
 .footer {
   background-color: var(--color-navy-blue);
   padding: 96px 0;
 }
 
-/* D4: footer custom container */
 .footer__container {
   display: flex;
   flex-direction: column;
@@ -901,19 +903,17 @@ button {
 }
 
 /* =============================================
-   MOBILE MENU  (C1–C8)
+   MODAL
    ============================================= */
-
-/* C1: positioned at end of body, overlay */
-.mobile-menu {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 1000;
   width: 100%;
   height: 100%;
+  background-color: var(--color-navy-blue-modal);
 
-  /* C4: initially hidden */
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -922,21 +922,226 @@ button {
     visibility var(--transition);
 }
 
-/* C5: becomes visible with .is-open */
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  max-width: calc(100% - 32px);
+  min-height: 584px;
+  background-color: var(--color-dairy);
+  border-radius: 4px;
+  padding: 72px 24px 24px;
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition);
+}
+
+.modal__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-cornflower);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-navy-blue);
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    color var(--transition);
+}
+
+.modal__close:hover,
+.modal__close:focus {
+  background-color: var(--color-ocean);
+  border-color: transparent;
+  color: var(--color-white);
+}
+
+.modal__title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.02em;
+  color: var(--color-navy-blue);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal__label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-light-slate);
+}
+
+.modal__input-wrap {
+  position: relative;
+}
+
+.modal__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--color-navy-blue-modal);
+  border-radius: 4px;
+  padding: 11px 38px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-navy-blue);
+  background-color: transparent;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.modal__input:focus {
+  border-color: var(--color-iris);
+}
+
+.modal__input:focus + .modal__icon {
+  color: var(--color-iris);
+}
+
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: var(--color-navy-blue);
+  pointer-events: none;
+  transition: color var(--transition);
+}
+
+.modal__textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid var(--color-navy-blue-modal);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-navy-blue);
+  background-color: transparent;
+  outline: none;
+  resize: none;
+  transition: border-color var(--transition);
+}
+
+.modal__textarea::placeholder {
+  color: var(--color-navy-blue-modal);
+}
+
+.modal__textarea:focus {
+  border-color: var(--color-iris);
+}
+
+.modal__checkbox-wrap {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.modal__checkbox-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-light-slate);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.modal__checkbox-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-navy-blue-modal);
+  border-radius: 2px;
+  background-color: transparent;
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    fill var(--transition);
+}
+
+.modal__checkbox:checked + .modal__checkbox-label .modal__checkbox-icon {
+  background-color: var(--color-ocean);
+  border-color: var(--color-ocean);
+  fill: var(--color-cloud);
+}
+
+.modal__policy-link {
+  color: var(--color-iris);
+  text-decoration: underline;
+}
+
+.modal__submit {
+  align-self: center;
+  min-width: 169px;
+  padding: 16px 32px;
+}
+
+/* =============================================
+   MOBILE MENU
+   ============================================= */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity var(--transition),
+    visibility var(--transition);
+}
+
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 
-/* C7: hidden on tablet and desktop */
 @media (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
 }
 
-/* C3: full viewport */
 .mobile-menu__inner {
   background-color: var(--color-white);
   width: 100%;
@@ -973,7 +1178,6 @@ button {
   color: var(--color-white);
 }
 
-/* C6: nav top, contacts/socials bottom with flexible gap */
 .mobile-menu__nav {
   margin-bottom: auto;
 }
@@ -993,7 +1197,6 @@ button {
   transition: color var(--transition);
 }
 
-/* C8: accent static color (no state change) */
 .mobile-menu__nav-link--accent {
   color: var(--color-ocean);
 }
@@ -1009,18 +1212,14 @@ button {
   gap: 48px;
 }
 
-.mobile-menu__contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
 .mobile-menu__contacts ul {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  /* Fixed: gap between phone and email should be 24px */
+  gap: 24px;
 }
 
+/* Fixed: phone link — medium weight, standard size (not oversized nav style) */
 .mobile-menu__contact-link {
   font-size: 20px;
   line-height: 1.2;
@@ -1030,11 +1229,8 @@ button {
   transition: color var(--transition);
 }
 
-/* C8: accent static color on contact link */
+/* Fixed: phone accent link — same medium/20px style, just iris color */
 .mobile-menu__contact-link--accent {
-  font-size: 36px;
-  line-height: 1.11;
-  font-weight: var(--font-weight-bold);
   color: var(--color-iris);
 }
 
@@ -1043,8 +1239,9 @@ button {
   color: var(--color-iris);
 }
 
+/* Fixed: social icons gap 40px (not 56px) */
 .mobile-menu__socials {
   display: flex;
-  gap: 56px;
+  gap: 40px;
   flex-wrap: wrap;
 }

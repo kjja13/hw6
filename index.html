@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -65,485 +68,499 @@
       </div>
     </header>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero__title">Effective Solutions for Your Business</h1>
-        <button class="btn btn--primary" type="button">Order Service</button>
-      </div>
-    </section>
+    <!-- ===== MAIN ===== -->
+    <main>
+      <!-- ===== HERO ===== -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Effective Solutions for Your Business</h1>
+          <button class="btn btn--primary" type="button">Order Service</button>
+        </div>
+      </section>
 
-    <!-- ===== FEATURES ===== -->
-    <section class="section features">
-      <div class="container">
-        <ul class="features__list">
-          <li class="features__item">
-            <div class="features__icon-box">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                <circle
-                  cx="32"
-                  cy="32"
-                  r="20"
-                  stroke="#4D5AE5"
-                  stroke-width="2"
-                />
-                <path
-                  d="M22 32l6 6 14-14"
-                  stroke="#4D5AE5"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <h3 class="features__title">Strategy</h3>
-            <p class="features__text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and impactful solution.
-            </p>
-          </li>
-          <li class="features__item">
-            <div class="features__icon-box">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                <rect
-                  x="14"
-                  y="14"
-                  width="36"
-                  height="36"
-                  rx="4"
-                  stroke="#4D5AE5"
-                  stroke-width="2"
-                />
-                <path
-                  d="M22 32h20M32 22v20"
-                  stroke="#4D5AE5"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <h3 class="features__title">Punctuality</h3>
-            <p class="features__text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="features__item">
-            <div class="features__icon-box">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                <path
-                  d="M16 48 L32 16 L48 48"
-                  stroke="#4D5AE5"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M22 36h20"
-                  stroke="#4D5AE5"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <h3 class="features__title">Diligence</h3>
-            <p class="features__text">
-              We constantly improve our skills to provide you with the best
-              result. We believe that doing a job well is always better than
-              doing it fast.
-            </p>
-          </li>
-          <li class="features__item">
-            <div class="features__icon-box">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                <ellipse
-                  cx="32"
-                  cy="32"
-                  rx="20"
-                  ry="12"
-                  stroke="#4D5AE5"
-                  stroke-width="2"
-                />
-                <path
-                  d="M12 32c0 6.627 8.954 12 20 12s20-5.373 20-12"
-                  stroke="#4D5AE5"
-                  stroke-width="2"
-                />
-                <path
-                  d="M32 20v24"
-                  stroke="#4D5AE5"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <h3 class="features__title">Technologies</h3>
-            <p class="features__text">
-              Design with the latest technologies in mind. Innovation and
-              creativity are the keys to a truly outstanding result.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <!-- ===== FEATURES ===== -->
+      <section class="section features">
+        <div class="container">
+          <h2 class="visually-hidden">Features</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__icon-box">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                  <circle
+                    cx="32"
+                    cy="32"
+                    r="20"
+                    stroke="#4D5AE5"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M22 32l6 6 14-14"
+                    stroke="#4D5AE5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__title">Strategy</h3>
+              <p class="features__text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and impactful solution.
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__icon-box">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                  <rect
+                    x="14"
+                    y="14"
+                    width="36"
+                    height="36"
+                    rx="4"
+                    stroke="#4D5AE5"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M22 32h20M32 22v20"
+                    stroke="#4D5AE5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__title">Punctuality</h3>
+              <p class="features__text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__icon-box">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                  <path
+                    d="M16 48 L32 16 L48 48"
+                    stroke="#4D5AE5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 36h20"
+                    stroke="#4D5AE5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__title">Diligence</h3>
+              <p class="features__text">
+                We constantly improve our skills to provide you with the best
+                result. We believe that doing a job well is always better than
+                doing it fast.
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__icon-box">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                  <ellipse
+                    cx="32"
+                    cy="32"
+                    rx="20"
+                    ry="12"
+                    stroke="#4D5AE5"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 32c0 6.627 8.954 12 20 12s20-5.373 20-12"
+                    stroke="#4D5AE5"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M32 20v24"
+                    stroke="#4D5AE5"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="features__title">Technologies</h3>
+              <p class="features__text">
+                Design with the latest technologies in mind. Innovation and
+                creativity are the keys to a truly outstanding result.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- ===== OUR TEAM ===== -->
-    <section class="section team">
-      <div class="container team__container">
-        <h2 class="section__title">Our Team</h2>
-        <ul class="team__list">
-          <li class="team__item">
-            <img
-              src="images/mark.png"
-              srcset="images/mark.png 1x, images/mark.png 2x"
-              alt="Mark Guerrero"
-              width="264"
-              height="260"
-            />
-            <div class="team__info">
-              <h3 class="team__name">Mark Guerrero</h3>
-              <p class="team__role">Product Designer</p>
-              <ul class="socials">
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="Instagram">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="Twitter">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="LinkedIn">
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="team__item">
-            <img
-              src="images/tom.png"
-              srcset="images/tom.png 1x, images/tom.png 2x"
-              alt="Tom Ford"
-              width="264"
-              height="260"
-            />
-            <div class="team__info">
-              <h3 class="team__name">Tom Ford</h3>
-              <p class="team__role">Frontend Developer</p>
-              <ul class="socials">
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="Instagram"
-                    ><svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                      /></svg
-                  ></a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="Twitter"
-                    ><svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                      /></svg
-                  ></a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="LinkedIn"
-                    ><svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                      /></svg
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="team__item">
-            <img
-              src="images/camila.png"
-              srcset="images/camila.png 1x, images/camila.png 2x"
-              alt="Camila Garcia"
-              width="264"
-              height="260"
-            />
-            <div class="team__info">
-              <h3 class="team__name">Camila Garcia</h3>
-              <p class="team__role">Marketing</p>
-              <ul class="socials">
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="Instagram"
-                    ><svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                      /></svg
-                  ></a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="Twitter"
-                    ><svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                      /></svg
-                  ></a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="LinkedIn"
-                    ><svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                      /></svg
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="team__item">
-            <img
-              src="images/daniel.png"
-              srcset="images/daniel.png 1x, images/daniel.png 2x"
-              alt="Daniel Wilson"
-              width="264"
-              height="260"
-            />
-            <div class="team__info">
-              <h3 class="team__name">Daniel Wilson</h3>
-              <p class="team__role">UI Designer</p>
-              <ul class="socials">
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="Instagram"
-                    ><svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                      /></svg
-                  ></a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="Twitter"
-                    ><svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                      /></svg
-                  ></a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link" aria-label="LinkedIn"
-                    ><svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                      /></svg
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <!-- ===== OUR TEAM ===== -->
+      <section class="section team">
+        <div class="container team__container">
+          <h2 class="section__title">Our Team</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <img
+                src="./images/mark.png"
+                srcset="./images/mark.png 1x, ./images/mark.png 2x"
+                alt="Mark Guerrero"
+                width="264"
+                height="260"
+              />
+              <div class="team__info">
+                <h3 class="team__name">Mark Guerrero</h3>
+                <p class="team__role">Product Designer</p>
+                <ul class="socials">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="Instagram">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="Twitter">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="LinkedIn">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <img
+                src="./images/tom.png"
+                srcset="./images/tom.png 1x, ./images/tom.png 2x"
+                alt="Tom Ford"
+                width="264"
+                height="260"
+              />
+              <div class="team__info">
+                <h3 class="team__name">Tom Ford</h3>
+                <p class="team__role">Frontend Developer</p>
+                <ul class="socials">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="Instagram">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="Twitter">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="LinkedIn">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <img
+                src="./images/camila.png"
+                srcset="./images/camila.png 1x, ./images/camila.png 2x"
+                alt="Camila Garcia"
+                width="264"
+                height="260"
+              />
+              <div class="team__info">
+                <h3 class="team__name">Camila Garcia</h3>
+                <p class="team__role">Marketing</p>
+                <ul class="socials">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="Instagram">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="Twitter">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="LinkedIn">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <img
+                src="./images/daniel.png"
+                srcset="./images/daniel.png 1x, ./images/daniel.png 2x"
+                alt="Daniel Wilson"
+                width="264"
+                height="260"
+              />
+              <div class="team__info">
+                <h3 class="team__name">Daniel Wilson</h3>
+                <p class="team__role">UI Designer</p>
+                <ul class="socials">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="Instagram">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="Twitter">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link" aria-label="LinkedIn">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- ===== PORTFOLIO ===== -->
-    <section class="section portfolio">
-      <div class="container">
-        <h2 class="section__title">Our Portfolio</h2>
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
-            <div class="portfolio__thumb">
-              <img
-                src="images/image1.jpg"
-                srcset="images/image1.jpg 1x, images/image1.jpg 2x"
-                alt="Banking App"
-                width="360"
-                height="300"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__overlay-text">
-                  14 Stylish and user-friendly product. Inspired by Crypto and
-                  Blockchain research articles.
-                </p>
+      <!-- ===== PORTFOLIO ===== -->
+      <section class="section portfolio">
+        <div class="container">
+          <h2 class="section__title">Our Portfolio</h2>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <div class="portfolio__thumb">
+                <img
+                  src="./images/image1.jpg"
+                  srcset="./images/image1.jpg 1x, ./images/image1.jpg 2x"
+                  alt="Banking App"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
+                    14 Stylish and user-friendly product. Inspired by Crypto and
+                    Blockchain research articles.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__name">Banking App</h3>
-              <p class="portfolio__type">App</p>
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <div class="portfolio__thumb">
-              <img
-                src="images/image2.jpg"
-                srcset="images/image2.jpg 1x, images/image2.jpg 2x"
-                alt="Cashless Payment"
-                width="360"
-                height="300"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__overlay-text">
-                  Modern cashless payment solution for everyday use.
-                </p>
+              <div class="portfolio__info">
+                <h3 class="portfolio__name">Banking App</h3>
+                <p class="portfolio__type">App</p>
               </div>
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__name">Cashless Payment</h3>
-              <p class="portfolio__type">Marketing</p>
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <div class="portfolio__thumb">
-              <img
-                src="images/image3.jpg"
-                srcset="images/image3.jpg 1x, images/image3.jpg 2x"
-                alt="Meditation App"
-                width="360"
-                height="300"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__overlay-text">
-                  A mindful approach to design for the wellness industry.
-                </p>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__thumb">
+                <img
+                  src="./images/image2.jpg"
+                  srcset="./images/image2.jpg 1x, ./images/image2.jpg 2x"
+                  alt="Cashless Payment"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
+                    Modern cashless payment solution for everyday use.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__name">Meditation App</h3>
-              <p class="portfolio__type">App</p>
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <div class="portfolio__thumb">
-              <img
-                src="images/image4.jpg"
-                srcset="images/image4.jpg 1x, images/image4.jpg 2x"
-                alt="Taxi Service"
-                width="360"
-                height="300"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__overlay-text">
-                  Taxi booking platform with real-time tracking and seamless UX.
-                </p>
+              <div class="portfolio__info">
+                <h3 class="portfolio__name">Cashless Payment</h3>
+                <p class="portfolio__type">Marketing</p>
               </div>
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__name">Taxi Service</h3>
-              <p class="portfolio__type">Marketing</p>
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <div class="portfolio__thumb">
-              <img
-                src="images/image5.jpg"
-                srcset="images/image5.jpg 1x, images/image5.jpg 2x"
-                alt="Screen Canape"
-                width="360"
-                height="300"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__overlay-text">
-                  Premium digital experience for a luxury furniture brand.
-                </p>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__thumb">
+                <img
+                  src="./images/image3.jpg"
+                  srcset="./images/image3.jpg 1x, ./images/image3.jpg 2x"
+                  alt="Meditation App"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
+                    A mindful approach to design for the wellness industry.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__name">Screen Canape</h3>
-              <p class="portfolio__type">Design</p>
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <div class="portfolio__thumb">
-              <img
-                src="images/image6.jpg"
-                srcset="images/image6.jpg 1x, images/image6.jpg 2x"
-                alt="Online Courses"
-                width="360"
-                height="300"
-              />
-              <div class="portfolio__overlay">
-                <p class="portfolio__overlay-text">
-                  E-learning platform with interactive modules and progress
-                  tracking.
-                </p>
+              <div class="portfolio__info">
+                <h3 class="portfolio__name">Meditation App</h3>
+                <p class="portfolio__type">App</p>
               </div>
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__name">Online Courses</h3>
-              <p class="portfolio__type">Marketing</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__thumb">
+                <img
+                  src="./images/image4.jpg"
+                  srcset="./images/image4.jpg 1x, ./images/image4.jpg 2x"
+                  alt="Taxi Service"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
+                    Taxi booking platform with real-time tracking and seamless
+                    UX.
+                  </p>
+                </div>
+              </div>
+              <div class="portfolio__info">
+                <h3 class="portfolio__name">Taxi Service</h3>
+                <p class="portfolio__type">Marketing</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__thumb">
+                <img
+                  src="./images/image5.jpg"
+                  srcset="./images/image5.jpg 1x, ./images/image5.jpg 2x"
+                  alt="Screen Canape"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
+                    Premium digital experience for a luxury furniture brand.
+                  </p>
+                </div>
+              </div>
+              <div class="portfolio__info">
+                <h3 class="portfolio__name">Screen Canape</h3>
+                <p class="portfolio__type">Design</p>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__thumb">
+                <img
+                  src="./images/image6.jpg"
+                  srcset="./images/image6.jpg 1x, ./images/image6.jpg 2x"
+                  alt="Online Courses"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio__overlay">
+                  <p class="portfolio__overlay-text">
+                    E-learning platform with interactive modules and progress
+                    tracking.
+                  </p>
+                </div>
+              </div>
+              <div class="portfolio__info">
+                <h3 class="portfolio__name">Online Courses</h3>
+                <p class="portfolio__type">Marketing</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
@@ -562,8 +579,8 @@
           <p class="footer__social-title">Social media</p>
           <ul class="footer__social-list">
             <li>
-              <a href="#" class="footer__social-link" aria-label="Instagram"
-                ><svg
+              <a href="#" class="footer__social-link" aria-label="Instagram">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -571,12 +588,13 @@
                 >
                   <path
                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                  /></svg
-              ></a>
+                  />
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#" class="footer__social-link" aria-label="Twitter"
-                ><svg
+              <a href="#" class="footer__social-link" aria-label="Twitter">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -584,12 +602,13 @@
                 >
                   <path
                     d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                  /></svg
-              ></a>
+                  />
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#" class="footer__social-link" aria-label="LinkedIn"
-                ><svg
+              <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -597,12 +616,13 @@
                 >
                   <path
                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                  /></svg
-              ></a>
+                  />
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#" class="footer__social-link" aria-label="YouTube"
-                ><svg
+              <a href="#" class="footer__social-link" aria-label="YouTube">
+                <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -610,15 +630,16 @@
                 >
                   <path
                     d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"
-                  /></svg
-              ></a>
+                  />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
 
         <div class="footer__subscribe">
           <p class="footer__social-title">Subscribe</p>
-          <form class="footer__form" novalidate>
+          <div class="footer__form">
             <input
               class="footer__input"
               type="email"
@@ -626,7 +647,7 @@
               placeholder="E-mail"
               autocomplete="off"
             />
-            <button class="btn btn--primary footer__btn" type="submit">
+            <button class="btn btn--primary footer__btn" type="button">
               Subscribe
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
@@ -638,10 +659,154 @@
                 />
               </svg>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- ===== MODAL ===== -->
+    <div
+      class="backdrop"
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Order form"
+    >
+      <div class="modal">
+        <button
+          class="modal__close"
+          type="button"
+          aria-label="Close modal"
+          id="modalClose"
+        >
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+            <path
+              d="M0.46967 0.46967C0.762563 0.176777 1.23744 0.176777 1.53033 0.46967L4 2.93934L6.46967 0.46967C6.76256 0.176777 7.23744 0.176777 7.53033 0.46967C7.82322 0.762563 7.82322 1.23744 7.53033 1.53033L5.06066 4L7.53033 6.46967C7.82322 6.76256 7.82322 7.23744 7.53033 7.53033C7.23744 7.82322 6.76256 7.82322 6.46967 7.53033L4 5.06066L1.53033 7.53033C1.23744 7.82322 0.762563 7.82322 0.46967 7.53033C0.176777 7.23744 0.176777 6.76256 0.46967 6.46967L2.93934 4L0.46967 1.53033C0.176777 1.23744 0.176777 0.762563 0.46967 0.46967Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <p class="modal__title">
+          Leave your contacts and we will call you back
+        </p>
+        <div class="modal__form">
+          <div class="modal__field">
+            <label class="modal__label" for="modalName">Name</label>
+            <div class="modal__input-wrap">
+              <input
+                class="modal__input"
+                type="text"
+                id="modalName"
+                name="name"
+              />
+              <svg
+                class="modal__icon"
+                width="18"
+                height="24"
+                viewBox="0 0 18 24"
+                fill="none"
+              >
+                <path
+                  d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M1 21C1 17.134 4.13401 14 8 14H10C13.866 14 17 17.134 17 21"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="modal__field">
+            <label class="modal__label" for="modalPhone">Phone</label>
+            <div class="modal__input-wrap">
+              <input
+                class="modal__input"
+                type="tel"
+                id="modalPhone"
+                name="phone"
+              />
+              <svg
+                class="modal__icon"
+                width="18"
+                height="24"
+                viewBox="0 0 18 24"
+                fill="none"
+              >
+                <path
+                  d="M3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V6C3 13.732 9.26801 20 17 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V15.7208C20 15.3001 19.7280 14.9291 19.3280 14.8080L15.4063 13.5963C14.9301 13.4521 14.4175 13.6540 14.1679 14.0857L13.1284 15.8567C10.6411 14.8135 8.68649 12.8589 7.64327 10.3716L9.41426 9.33205C9.84597 9.08246 10.0479 8.56991 9.90369 8.09370L8.69199 4.17199C8.57088 3.77198 8.19986 3.5 7.77918 3.5H5.5C4.96957 3.5 4.46086 3.71071 4.08579 4.08579L3.58579 3.58579Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="modal__field">
+            <label class="modal__label" for="modalEmail">Email</label>
+            <div class="modal__input-wrap">
+              <input
+                class="modal__input"
+                type="email"
+                id="modalEmail"
+                name="email"
+              />
+              <svg
+                class="modal__icon"
+                width="18"
+                height="24"
+                viewBox="0 0 18 24"
+                fill="none"
+              >
+                <path
+                  d="M2 6L9 13L16 6M2 6H16V18H2V6Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="modal__field">
+            <label class="modal__label" for="modalComment">Comment</label>
+            <textarea
+              class="modal__textarea"
+              id="modalComment"
+              name="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="modal__checkbox-wrap">
+            <input
+              class="modal__checkbox visually-hidden"
+              type="checkbox"
+              id="modalPolicy"
+              name="policy"
+            />
+            <label class="modal__checkbox-label" for="modalPolicy">
+              <span class="modal__checkbox-icon">
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                  <path
+                    d="M1 3.5L3.5 6L9 1"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="modal__policy-link">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="btn btn--primary modal__submit" type="button">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- ===== MOBILE MENU ===== -->
     <div class="mobile-menu" id="mobileMenu">
@@ -699,62 +864,66 @@
 
           <ul class="mobile-menu__socials">
             <li>
-              <a href="#" class="socials__link" aria-label="Instagram"
-                ><svg
-                  width="16"
-                  height="16"
+              <a href="#" class="socials__link" aria-label="Instagram">
+                <svg
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
                   <path
                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                  /></svg
-              ></a>
+                  />
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#" class="socials__link" aria-label="Twitter"
-                ><svg
-                  width="16"
-                  height="16"
+              <a href="#" class="socials__link" aria-label="Twitter">
+                <svg
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
                   <path
                     d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-                  /></svg
-              ></a>
+                  />
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#" class="socials__link" aria-label="LinkedIn"
-                ><svg
-                  width="16"
-                  height="16"
+              <a href="#" class="socials__link" aria-label="LinkedIn">
+                <svg
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
                   <path
                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                  /></svg
-              ></a>
+                  />
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#" class="socials__link" aria-label="YouTube"
-                ><svg
-                  width="16"
-                  height="16"
+              <a href="#" class="socials__link" aria-label="YouTube">
+                <svg
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
                   <path
                     d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"
-                  /></svg
-              ></a>
+                  />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <script src="js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
