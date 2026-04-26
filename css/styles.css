@@ -811,6 +811,7 @@ button {
 .footer__brand .logo {
   display: inline-block;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 /* MOBILE */
