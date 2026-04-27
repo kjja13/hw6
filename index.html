@@ -44,16 +44,15 @@
             </li>
           </ul>
         </address>
+        <!-- FIX: burger icon uses svg > use structure instead of inline rects -->
         <button
           class="burger-btn"
           type="button"
           aria-label="Open menu"
           data-mobile-open
         >
-          <svg width="24" height="24" fill="none">
-            <rect y="4" width="24" height="2" rx="1" fill="#2E2F42" />
-            <rect y="11" width="24" height="2" rx="1" fill="#2E2F42" />
-            <rect y="18" width="24" height="2" rx="1" fill="#2E2F42" />
+          <svg class="burger-btn__icon" width="24" height="24">
+            <use xlink:href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
@@ -71,8 +70,10 @@
       </section>
 
       <!-- FEATURES -->
+      <!-- FIX: added visually-hidden h2 for semantic section heading -->
       <section class="features section">
         <div class="container">
+          <h2 class="visually-hidden">Features</h2>
           <ul class="features__list">
             <li class="features__item">
               <div class="features__icon-wrap">
@@ -132,10 +133,11 @@
           <h2 class="section__title">Our Team</h2>
           <ul class="team__list">
             <li class="team__item">
+              <!-- FIX: image paths now use ./images/ prefix; same for srcset -->
               <img
                 class="team__photo"
-                src="images/mark.png"
-                srcset="images/mark.png 1x, images/mark@2x.png 2x"
+                src="./images/mark.png"
+                srcset="./images/mark.png 1x, ./images/mark@2x.png 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -182,8 +184,8 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="images/tom.png"
-                srcset="images/tom.png 1x, images/tom@2x.png 2x"
+                src="./images/tom.png"
+                srcset="./images/tom.png 1x, ./images/tom@2x.png 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -230,8 +232,8 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="images/camila.png"
-                srcset="images/camila.png 1x, images/camila@2x.png 2x"
+                src="./images/camila.png"
+                srcset="./images/camila.png 1x, ./images/camila@2x.png 2x"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -278,8 +280,8 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="images/daniel.png"
-                srcset="images/daniel.png 1x, images/daniel@2x.png 2x"
+                src="./images/daniel.png"
+                srcset="./images/daniel.png 1x, ./images/daniel@2x.png 2x"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -334,10 +336,11 @@
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <div class="portfolio__thumb">
+                <!-- FIX: portfolio image paths now use ./images/ prefix -->
                 <img
                   class="portfolio__img"
-                  src="images/image1.jpg"
-                  srcset="images/image1.jpg 1x, images/image1@2x.jpg 2x"
+                  src="./images/image1.jpg"
+                  srcset="./images/image1.jpg 1x, ./images/image1@2x.jpg 2x"
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -357,8 +360,8 @@
               <div class="portfolio__thumb">
                 <img
                   class="portfolio__img"
-                  src="images/image2.jpg"
-                  srcset="images/image2.jpg 1x, images/image2@2x.jpg 2x"
+                  src="./images/image2.jpg"
+                  srcset="./images/image2.jpg 1x, ./images/image2@2x.jpg 2x"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -377,8 +380,8 @@
               <div class="portfolio__thumb">
                 <img
                   class="portfolio__img"
-                  src="images/image3.jpg"
-                  srcset="images/image3.jpg 1x, images/image3@2x.jpg 2x"
+                  src="./images/image3.jpg"
+                  srcset="./images/image3.jpg 1x, ./images/image3@2x.jpg 2x"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -397,8 +400,8 @@
               <div class="portfolio__thumb">
                 <img
                   class="portfolio__img"
-                  src="images/image4.jpg"
-                  srcset="images/image4.jpg 1x, images/image4@2x.jpg 2x"
+                  src="./images/image4.jpg"
+                  srcset="./images/image4.jpg 1x, ./images/image4@2x.jpg 2x"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -417,8 +420,8 @@
               <div class="portfolio__thumb">
                 <img
                   class="portfolio__img"
-                  src="images/image5.jpg"
-                  srcset="images/image5.jpg 1x, images/image5@2x.jpg 2x"
+                  src="./images/image5.jpg"
+                  srcset="./images/image5.jpg 1x, ./images/image5@2x.jpg 2x"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -437,8 +440,8 @@
               <div class="portfolio__thumb">
                 <img
                   class="portfolio__img"
-                  src="images/image6.jpg"
-                  srcset="images/image6.jpg 1x, images/image6@2x.jpg 2x"
+                  src="./images/image6.jpg"
+                  srcset="./images/image6.jpg 1x, ./images/image6@2x.jpg 2x"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -465,6 +468,7 @@
           <a class="logo logo--light" href="index.html">
             <span class="logo__web">WEB</span>STUDIO
           </a>
+          <!-- FIX: footer text must be left-aligned on mobile; text-align handled in CSS -->
           <p class="footer__text">
             Increase the flow of customers and sales for your business with
             digital marketing &amp; growth solutions.
@@ -516,12 +520,15 @@
         <div class="footer__subscribe">
           <p class="footer__social-title">Subscribe</p>
           <form class="subscribe-form" action="#" novalidate>
+            <label class="visually-hidden" for="subscribe-email"
+              >Email for subscribe</label
+            >
             <input
               class="subscribe-form__input"
               type="email"
+              id="subscribe-email"
               name="subscribe-email"
               placeholder="E-mail"
-              aria-label="Email for subscribe"
             />
             <button class="btn btn--primary subscribe-form__btn" type="submit">
               Subscribe
@@ -623,6 +630,7 @@
             />
             <label class="modal-form__checkbox-label" for="modal-agree">
               <span class="modal-form__checkbox-custom">
+                <!-- FIX: icon-checkmark symbol must exist in icons.svg -->
                 <svg class="modal-form__checkbox-icon" width="10" height="8">
                   <use xlink:href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
@@ -684,10 +692,11 @@
                 </li>
               </ul>
             </address>
+            <!-- FIX: mobile menu social icons are 24×24, not 16×16 -->
             <ul class="socials mobile-menu__socials">
               <li class="socials__item">
                 <a class="socials__link" href="#" aria-label="Instagram"
-                  ><svg class="socials__icon" width="16" height="16">
+                  ><svg class="socials__icon" width="24" height="24">
                     <use
                       xlink:href="./images/icons.svg#icon-instagram"
                     ></use></svg
@@ -695,7 +704,7 @@
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="#" aria-label="Twitter"
-                  ><svg class="socials__icon" width="16" height="16">
+                  ><svg class="socials__icon" width="24" height="24">
                     <use
                       xlink:href="./images/icons.svg#icon-twitter"
                     ></use></svg
@@ -703,7 +712,7 @@
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="#" aria-label="Facebook"
-                  ><svg class="socials__icon" width="16" height="16">
+                  ><svg class="socials__icon" width="24" height="24">
                     <use
                       xlink:href="./images/icons.svg#icon-facebook"
                     ></use></svg
@@ -711,7 +720,7 @@
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="#" aria-label="LinkedIn"
-                  ><svg class="socials__icon" width="16" height="16">
+                  ><svg class="socials__icon" width="24" height="24">
                     <use
                       xlink:href="./images/icons.svg#icon-linkedin"
                     ></use></svg
